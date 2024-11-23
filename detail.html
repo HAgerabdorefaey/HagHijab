@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>HagHijab</title>
+     <!-- Bootstrap Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link rel="icon" href="assest/images/ico.png">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="assest/css/bootstrap.min.css">
+     <!-- style CSS -->
+     <link rel="stylesheet" href="assest/css/style.css">
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+     <!-- Animate CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     <!--jQuery -->
+     <link rel="stylesheet" href="assest/css/jquery-ui.css">
+     <link rel="stylesheet" href="assest/css/owl.carousel.min.css">
+     <link rel="stylesheet" href="assest/css/owl.theme.default.min.css">
+
+</head>
+<body>
+     
+  <!--Top Bar-->
+  <div class="top-bar">
+    <div class="container">
+      <div class="col-12 text-right">
+        <p><a href="tell:+1 (555) 123-4567">Call us at : +1 (555) 123 - 4567</a></p>
+      </div>
+    </div>
+  </div>   
+  <!-- End Top Bar-->
+
+ <!-- navbar -->
+ <nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="assest/images/logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list-nested"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="productes.html">Productes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html">Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact Us.html">Contact Us</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn " type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- end navbar -->
+
+<!-- start detail -->
+<body id="special-page">
+ 
+  <div class="container product-container">
+
+    <div class="product-images">
+        <img src="assest/images/skarf.jpg" alt="Image 1" class="small-image" onclick="changeMainImage(this)">
+        <img src="assest/images/[SC-TXD-02] Printed scarf (C8).jpg" alt="Image 2" class="small-image" onclick="changeMainImage(this)">
+        <img src="assest/images/[SC-TXD-02] Printed scarf (C5).jpg" alt="Image 3" class="small-image" onclick="changeMainImage(this)">
+        <img src="assest/images/[SC-TXD-02] Printed scarf (C10).jpg" alt="Image 4" class="small-image" onclick="changeMainImage(this)">
+    </div>
+   
+    <div class="product-main">
+        <img src="assest/images/skarf.jpg" alt="Main Product Image" class="main-image" id="mainImage">
+    </div>
+   
+    <div class="product-info">
+      
+      <div class="rating">
+          <span class="star" style="color: gold; font-size: 20px;">&#9733;</span>
+          <span class="star" style="color: gold; font-size: 20px;">&#9733;</span>
+          <span class="star" style="color: gold; font-size: 20px;">&#9733;</span>
+          <span class="star" style="color: gold; font-size: 20px;">&#9733;</span>
+          <span class="star" style="color: gold; font-size: 20px;">&#9733;</span> 
+      </div>
+    
+      <h2 class="mt-4">Printed scarf</h2>
+     
+      <p class="ps">350.00 LE</p>
+    
+      <p class="lo">The elegance of your look starts from the shape of your hijab.
+        With designs and colors that suit your daily needs, and a soft and streamlined material
+        Rectangular veil with a length of 2 meters and a width of 75 cm</p>
+      
+      <div class="quantity-selector my-3">
+        <span class="quantity-label">QUANTITY</span>
+        <button onclick="decreaseQuantity('quantity1')">&#9664;</button>
+        <span id="quantity1" class="quantity-value">0</span>
+        <button onclick="increaseQuantity('quantity1')">&#9654;</button>
+    </div>
+      
+      <a href="cart.html"><button class="btn btn-dark">Add to cart</button></a>
+      <a class="hea" href="#"><i class="bi bi-suit-heart"></i>Add to wish list</a>
+    
+      <div class="product-meta mt-4">
+        <div class="inm">
+          <span class="lab">SKU:</span> <span class="value">045</span>
+      </div>
+      <div class="inm">
+          <span class="lab">CATEGORY:</span> <span class="value">Demo Products</span>
+      </div>
+      <div class="inm">
+          <span class="lab">TAGS:</span> <span class="value">Khimar and shawl</span>
+      </div>
+      </div>
+  </div>
+   
+  </div>
+  <!-- end detail -->
+  
+  <!--start taps-->
+  <div class="tab-container">
+    <div class="tabs">
+      <div class="tab active" onclick="showTab('description')">DESCRIOTION</div>
+      <div class="tab" onclick="showTab('reviews')">REVIEWS</div>
+    </div>
+    <div id="description" class="tab-content">
+      <h3>Product description  </h3>
+      <p>The elegance of your look starts from the shape of your hijab.
+        With designs and colors to suit your daily needs, and a soft and streamlined material.
+        Square veil with a length of one and a half meters and a width of one and a half meters
+      </p>
+    </div>
+    <div id="reviews" class="tab-content" style="display: none;">
+      <div class="review">
+        <img src="assest/images/512aa589f2f5e1516385791b1aa90d7a.jpg" alt="Reviewer 1">
+        <div class="details">
+            <h3>Nada Mohammed</h3>
+            <div class="date">30 October 2024</div>
+            <div class="stars half">⭐⭐⭐⭐⭐</div>
+            <p>Great experience! The clothes are very comfortable and practical, and the materials are excellent. I liked the variety of modern designs that suit veiled women at reasonable prices. In addition to the excellent delivery speed.</p>
+        </div>
+    </div>
+
+    <div class="review">
+        <img src="assest/images/80472757f41b9b8f95a2461d842dd0a2.jpg" alt="Reviewer 2">
+        <div class="details">
+            <h3>Aisha Ahmed</h3>
+            <div class="date">30 October 2024</div>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>The clothes are more than wonderful! The designs are very elegant and suit all tastes, and the materials are comfortable and suitable for all seasons.</p>
+        </div>
+    </div>
+    </div>
+  </div>
+  <!--end taps-->
+
+  <!--Related products-->
+  <section id="related-products">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div>
+            <h1>RELATES PRODUCTS</h1>
+          </div>
+          <div class="king">
+            <div class="row">
+              <div class="ck col-3">
+                <div class="cor">
+                  <div class="card-img-container">
+                    <img src="assest/images/Sujjod Esdal Purple Mix Design.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <div class="icon-container">
+                        <a href="cart.html" class="add-to-cart-icon"><i class="bi bi-cart-check"></i></a>
+                      </div>
+                      <div class="text-container">
+                        <a href="cart.html" class="add-to-cart-text">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="card-body">
+                      <a href=""><h5 class="card-title">exit curtain</h5></a>
+                      <p class="card-text">950.00 LE</p>
+                    </div>
+                </div>
+              </div>
+              <div class=" ck col-3">
+                <div class="cor">
+                  <div class="card-img-container">
+                    <img src="assest/images/Lyal Abaya - Beige.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <div class="icon-container">
+                        <a href="cart.html" class="add-to-cart-icon"><i class="bi bi-cart-check"></i></a>
+                      </div>
+                      <div class="text-container">
+                        <a href="cart.html" class="add-to-cart-text">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="card-body">
+                      <a href=""><h5 class="card-title">satin blanket </h5></a>
+                      <p class="card-text">1500.00 LE</p>
+                    </div>
+                </div>
+              </div>
+              <div class=" ck col-3">
+                <div class="cor">
+                  <div class="card-img-container">
+                    <img src="assest/images/Ednaa Stan.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <div class="icon-container">
+                        <a href="cart.html" class="add-to-cart-icon"><i class="bi bi-cart-check"></i></a>
+                      </div>
+                      <div class="text-container">
+                        <a href="cart.html" class="add-to-cart-text">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="card-body">
+                      <a href=""><h5 class="card-title">ednaa stan</h5></a>
+                      <p class="card-text">1000.00 LE</p>
+                    </div>
+                </div>
+              </div>
+              <div class=" ck col-3">
+                <div class="cor">
+                  <div class="card-img-container">
+                    <img src="assest/images/Ariel Set.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <div class="icon-container">
+                        <a href="cart.html" class="add-to-cart-icon"><i class="bi bi-cart-check"></i></a>
+                      </div>
+                      <div class="text-container">
+                        <a href="cart.html" class="add-to-cart-text">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="card-body">
+                      <a href=""><h5 class="card-title">ariel set</h5></a>
+                      <p class="card-text">1250.00 LE</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!--end Related products-->
+      
+</body>
+
+ <!-- start footer -->
+
+ <br>
+ 
+ <section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <div>
+          <h1>HagHijab</h1>
+          <h2>Model Fashion</h2>
+        </div>
+
+        <div class="links">
+          <a href=""><p>Exchange and return policy</p></a>
+          <a href=""><p>privacy policy</p></a> 
+          <a href=""><p>Contact us</p></a> 
+          <a href=""><p>About HagHijab</p></a>
+        </div>
+        <div class="hag">
+          <p>&copy; 2024 HagHijab. All rights reserved.</p>
+        </div>
+
+        <div class="social-icons">
+          <a href="index.html"><i class="bi bi-facebook"></i></a> 
+          <a href="index.html"><i class="bi bi-twitter-x"></i></a>
+          <a href="index.html"><i class="bi bi-linkedin"></i></a>
+          <a href="index.html"><i class="bi bi-instagram"></i></a>
+          <a href="index.html"><i class="bi bi-youtube"></i></a>
+          <a href="index.html"><i class="bi bi-github"></i></a>
+        </div>
+
+       
+
+      </div>
+    </div>
+  </div>
+</section>
+ <!--end footer-->
+
+ <!-- scroll button-->
+ <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">↑</button>
+ <!--end scroll button -->
+
+
+<script src="assest/js/hi.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="assest/js/bootstrap.min.js"></script>
+<!-- Development version -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<!-- Production version -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<!-- FontAwesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+<!-- End Script Source Files -->
+</body>
+</html>
